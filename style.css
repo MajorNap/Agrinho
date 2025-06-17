@@ -1,1 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
+.banner {
+    background-color: #3498db; /* Uma cor azul bonita para o fundo do banner */
+    color: white;
+    padding: 60px 20px; /* Preenchimento superior/inferior e esquerdo/direito */
+    text-align: center;
+    width: 100%; /* Garante que ocupe a largura total */
+    box-sizing: border-box; /* Inclui o preenchimento no cálculo da largura */
+    /* Você pode usar uma imagem de fundo em vez ou além de uma cor de fundo */
+    /* background-image: url('caminho/para/sua-imagem-banner.jpg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
+}
+
+.banner-content h1 {
+    margin-top: 0;
+    font-size: 3em;
+}
+
+.banner-content p {
+    font-size: 1.2em;
+    max-width: 800px; /* Limita a largura do texto para melhor leitura */
+    margin: 0 auto 20px auto; /* Centraliza o parágrafo e adiciona margem inferior */
+}
+
+/* Se você adicionar uma imagem ao banner */
+.banner-content img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove espaço extra abaixo da imagem */
+    margin: 20px auto 0 auto; /* Centraliza a imagem */
+}
+
+.main-content {
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}
