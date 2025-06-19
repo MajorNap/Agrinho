@@ -1,55 +1,88 @@
 body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5; /* Um cinza claro para o fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que o card fique centralizado verticalmente */
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box; /* Inclui padding na largura e altura */
+}
+
+.profile-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 30px;
+    text-align: center;
+    max-width: 400px; /* Largura máxima do cartão */
+    width: 100%;
+}
+
+.profile-photo-container {
+    margin-bottom: 25px;
+}
+
+.profile-photo {
+    width: 150px; /* Tamanho da foto */
+    height: 150px;
+    border-radius: 50%; /* Faz a foto ser circular */
+    object-fit: cover; /* Garante que a imagem preencha o círculo */
+    border: 4px solid #007bff; /* Borda azul ao redor da foto */
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.3); /* Sombra suave para a foto */
+}
+
+.profile-title {
+    font-size: 2.2em;
     color: #333;
-}
-
-.banner {
-    background-color: #3498db; /* Uma cor azul bonita para o fundo do banner */
-    color: white;
-    padding: 60px 20px; /* Preenchimento superior/inferior e esquerdo/direito */
-    text-align: center;
-    width: 100%; /* Garante que ocupe a largura total */
-    box-sizing: border-box; /* Inclui o preenchimento no cálculo da largura */
-    /* Você pode usar uma imagem de fundo em vez ou além de uma cor de fundo */
-    /* background-image: url('caminho/para/sua-imagem-banner.jpg'); */
-    /* background-size: cover; */
-    /* background-position: center; */
-}
-
-.banner-content h1 {
     margin-top: 0;
-    font-size: 3em;
+    margin-bottom: 8px;
+    font-weight: 700; /* Negrito */
 }
 
-.banner-content p {
-    font-size: 1.2em;
-    max-width: 800px; /* Limita a largura do texto para melhor leitura */
-    margin: 0 auto 20px auto; /* Centraliza o parágrafo e adiciona margem inferior */
+.profile-subtitle {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
 }
 
-/* Se você adicionar uma imagem ao banner */
-.banner-content img {
-    max-width: 100%;
-    height: auto;
-    display: block; /* Remove espaço extra abaixo da imagem */
-    margin: 20px auto 0 auto; /* Centraliza a imagem */
+.profile-description {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
 }
 
-.main-content {
-    padding: 20px;
-    max-width: 960px;
-    margin: 20px auto;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 8px;
+/* Estilos opcionais para botões */
+.profile-actions .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
+.profile-actions .btn {
+    background-color: #007bff;
     color: white;
-    margin-top: 30px;
+    border: 1px solid #007bff;
+}
+
+.profile-actions .btn:hover {
+    background-color: #0056b3;
+}
+
+.profile-actions .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: 1px solid #6c757d;
+}
+
+.profile-actions .btn-secondary:hover {
+    background-color: #5a6268;
 }
